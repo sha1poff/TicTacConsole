@@ -1,8 +1,17 @@
 #include "pch.h"
 #include "TicTacManager.h"
+#include "TicTacHumanPlayer.h"
 
 
 TicTacManager::TicTacManager() : board(nullptr), player1(nullptr), player2(nullptr), currentPlayer(nullptr) {}
+
+TicTacManager::~TicTacManager()
+{
+    delete this->player2;
+    delete this->player1;
+    delete this->board;
+}
+
 
 bool TicTacManager::Init()
 {
@@ -19,8 +28,8 @@ bool TicTacManager::Init()
     }
 
     this->board = new TicTacBoard(boardsize);
-    this->player1 = new TicTacPlayer();
-    this->player2 = new TicTacPlayer();
+    this->player1 = new TicTacHumanPlayer();
+    this->player2 = new TicTacHumanPlayer();
 
     cin.ignore(); // очистка буфера после cin >> boardsize
 
@@ -38,13 +47,6 @@ bool TicTacManager::Init()
     currentPlayer = player1;
 
     return true;
-}
-
-TicTacManager::~TicTacManager()
-{
-    delete this->player2;
-    delete this->player1;
-    delete this->board;
 }
 
 void TicTacManager::ShowBoard()

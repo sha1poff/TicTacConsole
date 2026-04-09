@@ -17,7 +17,7 @@ int main()
 	{
 		manager.MakeMove();
 	};
-	_getch();
+	_getch();	
 
 	return 0;
 }

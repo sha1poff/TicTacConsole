@@ -3,21 +3,22 @@
 #include "pch.h"
 #include "TicTacBoard.h"
 
-
 class TicTacPlayer
 {
-private:
-    TicTacBoard* board;
-    CellType cellType;
-    string name;
-
+protected:
+	TicTacBoard* board;
+	CellType cellType;
+	string name;
+			
 public:
-    TicTacPlayer();
-    virtual ~TicTacPlayer();
+	TicTacPlayer();
+	virtual ~TicTacPlayer();
 
-    void SetupPlayer(string name, CellType cellType);
-    void SetBoard(TicTacBoard* board);
-    bool MakeMove(); // запрос координат у пользователя
+	void SetupPlayer(string name, CellType cellType);
+	void SetBoard(TicTacBoard* board);
 
-    string GetName();
+	virtual bool MakeMove() = 0;
+
+	string GetName();
 };
+
