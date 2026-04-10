@@ -33,6 +33,12 @@
     <ClCompile Include="TicTacComputerPlayer.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="TicTacBoardMonteCarloEvaluator.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacRandomPlayer.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -54,6 +60,12 @@
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
     <ClInclude Include="TicTacComputerPlayer.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacBoardMonteCarloEvaluator.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacRandomPlayer.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>

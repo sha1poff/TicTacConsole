@@ -17,6 +17,7 @@ private:
 
 public:
     TicTacBoard(unsigned int size);
+    TicTacBoard(TicTacBoard* board);
     virtual ~TicTacBoard();
 
     void Show(); // отрисовка поля с индексами строк и столбцов

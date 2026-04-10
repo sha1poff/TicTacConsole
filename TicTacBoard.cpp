@@ -15,6 +15,17 @@ TicTacBoard::TicTacBoard(unsigned int size)
     }
 }
 
+TicTacBoard::TicTacBoard(TicTacBoard* board)
+{
+    this->boardsize = board->boardsize;
+    cells = new CellType * [boardsize];
+    for (unsigned int i = 0; i < boardsize; i++)
+        cells[i] = new CellType[boardsize];
+    for (unsigned int i = 0; i < boardsize; i++)
+        for (unsigned int j = 0; j < boardsize; j++)
+            cells[i][j] = board->cells[i][j];
+}
+
 TicTacBoard::~TicTacBoard() {
     // освобождение памяти
     for (unsigned int i = 0; i < boardsize; i++)
