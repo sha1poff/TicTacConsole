@@ -4,7 +4,8 @@
 #include "TicTacPlayer.h"
 
 
-class TicTacHumanPlayer : public TicTacPlayer
+class TicTacHumanPlayer :
+    public TicTacPlayer
 {
 public:
     TicTacHumanPlayer();

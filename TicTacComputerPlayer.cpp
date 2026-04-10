@@ -1,16 +1,16 @@
 #include "pch.h"
-#include "TicTacHumanPlayer.h"
+#include "TicTacComputerPlayer.h"
 
 
-TicTacHumanPlayer::TicTacHumanPlayer()
+TicTacComputerPlayer::TicTacComputerPlayer()
 {
 }
 
-TicTacHumanPlayer::~TicTacHumanPlayer()
+TicTacComputerPlayer::~TicTacComputerPlayer()
 {
 }
 
-bool TicTacHumanPlayer::MakeMove()
+bool TicTacComputerPlayer::MakeMove()
 {
     unsigned int row, col;
     cout << "Игрок " << name << ", ваш ход..." << endl;
