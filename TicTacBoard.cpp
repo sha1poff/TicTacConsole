@@ -183,3 +183,8 @@ bool TicTacBoard::IsVictory()
 {
     return bVictory;
 }
+
+unsigned int TicTacBoard::GetBoardsize() const
+{
+    return boardsize;
+}

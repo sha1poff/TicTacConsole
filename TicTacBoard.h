@@ -26,4 +26,6 @@ public:
     bool CheckLegal(unsigned int xpos, unsigned int ypos);
     bool CheckEndCondition(); // проверка, закончена ли игра
     bool IsVictory();         // возвращает true, если есть победитель
+
+    unsigned int GetBoardsize() const;
 };
